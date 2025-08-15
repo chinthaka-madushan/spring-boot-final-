@@ -1,0 +1,90 @@
+<h1 class="text-2xl font-bold text-white">Allowance Manage</h1>
+<div class="main-container px-4 py-8 space-y-8">
+    <!-- Overview Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Total Allowances</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">All allowance offers currently available.</p>
+        </a>
+
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Disability Allowances</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Support provided for differently-abled individuals.</p>
+        </a>
+
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Low Income Support</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Allowances for families below the income threshold.</p>
+        </a>
+
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Elderly Benefits</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Special allowances for senior citizens.</p>
+        </a>
+    </div>
+
+    <!-- Controls -->
+    <div class="flex flex-col sm:flex-row sm:justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-2/3">
+            <div class="relative w-full sm:w-1/2">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <i class="bi bi-search text-gray-300"></i>
+                </div>
+                <input type="text" placeholder="Search allowance..."
+                    class="w-full pl-10 pr-4 py-2 border border-gray-500 bg-gray-700 rounded-xl text-white shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent">
+            </div>
+            <button
+                class="w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-gray-600 rounded-xl hover:bg-gray-700 transition flex items-center justify-center gap-2">
+                <i class="bi bi-funnel"></i> Filter
+            </button>
+        </div>
+
+        <button
+            class="w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-gray-600 rounded-xl hover:bg-gray-700 transition flex items-center justify-center gap-2">
+            <i class="bi bi-plus-lg"></i> Add Allowance
+        </button>
+    </div>
+
+    <!-- Allowance Table -->
+    <div class="relative overflow-x-auto shadow-lg rounded-2xl border border-gray-700 max-h-100">
+        <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400">
+            <thead class="text-xs text-center text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-300">
+                <tr>
+                    <th class="px-6 py-4">Offer ID</th>
+                    <th class="px-6 py-4">Allowance Type</th>
+                    <th class="px-6 py-4">Description</th>
+                    <th class="px-6 py-4">Amount</th>
+                    <th class="px-6 py-4">Added By</th>
+                    <th class="px-6 py-4">Actions</th>
+                    <th scope="col" class="px-6 py-4">Allowance Form</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-center">
+                    <td class="px-6 py-4 font-medium text-gray-900 dark:text-white">101</td>
+                    <td class="px-6 py-4">LOW_INCOME</td>
+                    <td class="px-6 py-4">Monthly support for low-income families</td>
+                    <td class="px-6 py-4">10,000.00</td>
+                    <td class="px-6 py-4">Officer ID: 5</td>
+                    <td class="px-6 py-4 text-center">
+                        <div class="flex justify-center gap-2">
+                            <a href="#"
+                                class="px-4 py-2 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700">Edit</a>
+                            <a href="#"
+                                class="px-4 py-2 text-xs font-medium text-white bg-red-600 rounded-lg hover:bg-red-700">Delete</a>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                        <div class="flex justify-center gap-4">
+                            <img class="w-11 h-11" src="assets/pdf.png" alt="PDF icon">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

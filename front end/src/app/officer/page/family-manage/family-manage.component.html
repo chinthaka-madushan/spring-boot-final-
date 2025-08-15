@@ -1,0 +1,114 @@
+<h1 class="text-2xl font-bold text-white">Family Manage</h1>
+<div class="main-container px-4 py-8 space-y-8">
+    <!-- Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- Card Template -->
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md transition hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Division Families</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Families within the division categorized for tracking.
+            </p>
+        </a>
+
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md transition hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">LOW Income Families</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Families recognized under low-income support schemes.
+            </p>
+        </a>
+
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md transition hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Disabled & Elderly Families</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Families with members who are disabled or elderly.</p>
+        </a>
+
+        <a href="#"
+            class="block p-6 bg-white border border-gray-200 rounded-2xl shadow-md transition hover:shadow-lg hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-xl font-semibold text-gray-900 dark:text-white">Receiving Allowances</h5>
+            <p class="text-sm text-gray-600 dark:text-gray-400">Families currently receiving government allowances.</p>
+        </a>
+    </div>
+
+
+    <div>
+        <!-- Header Section -->
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+            <h1 class="mb-2 text-xl font-bold text-white dark:text-black-50">Families List</h1>
+            <!-- <span class="text-sm font-semibold text-gray-500 mt-2 sm:mt-0">Total 89.4k</span> -->
+        </div>
+
+       <!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row sm:justify-between gap-4 mb-6">
+    <!-- Search + Filter Group -->
+    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-2/3">
+        <!-- Search Input -->
+        <div class="relative w-full sm:w-1/2">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <i class="bi bi-search text-gray-300"></i>
+            </div>
+            <input type="text" placeholder="Search family..."
+                class="w-full pl-10 pr-4 py-2 border border-gray-500 bg-gray-700 rounded-xl shadow-sm focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-transparent text-white">
+        </div>
+
+        <!-- Filter Button -->
+        <button
+            class="w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-gray-600 rounded-xl hover:bg-gray-700 transition flex items-center justify-center gap-2">
+            <i class="bi bi-funnel"></i>
+            Filter
+        </button>
+    </div>
+
+    <!-- Add Family Button -->
+    <button
+        class="w-full sm:w-auto px-4 py-2 text-sm font-medium text-white bg-gray-600 rounded-xl hover:bg-gray-700 transition flex items-center justify-center gap-2">
+        <i class="bi bi-plus-lg"></i>
+        Add Family
+    </button>
+</div>
+
+
+        <!-- Table -->
+        <div class="relative overflow-x-auto shadow-lg rounded-2xl border-1 border-gray-700 max-h-100">
+            <table class="w-full text-sm text-left text-gray-600 dark:text-gray-400 ">
+                <thead
+                    class="text-xs text-center text-gray-700 uppercase bg-gray-100 dark:bg-gray-700 dark:text-gray-300">
+                    <tr>
+                        <th scope="col" class="px-6 py-4">Family ID</th>
+                        <th scope="col" class="px-6 py-4">Members</th>
+                        <th scope="col" class="px-6 py-4">Income Type</th>
+                        <th scope="col" class="px-6 py-4">Edit / Delete</th>
+                        <th scope="col" class="px-6 py-4">Family Details</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                            F001
+                        </th>
+                        <td class="px-6 py-4">5 Members</td>
+                        <td class="px-6 py-4">Low Income</td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="flex justify-center gap-2">
+                                <a href="#"
+                                    class="px-5 py-2 w-15 text-xs font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition duration-200">
+                                    Edit
+                                </a>
+                                <a href="#"
+                                    class="px-3 py-2 w-15 text-xs font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 transition duration-200">
+                                    Delete
+                                </a>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 text-center">
+                            <div class="flex justify-center gap-4">
+                                <img class="w-11 h-11" src="assets/pdf.png" alt="PDF icon">
+                                <img class="w-9 h-10" src="assets/xl.png" alt="Excel icon">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

@@ -1,0 +1,107 @@
+<div class="flex h-screen bg-gray-150">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white flex flex-col m-2 rounded-xl">
+        <div class="p-6 text-xl font-semibold flex items-center">
+            <img class="rounded-xl object-fill w-10 h-10 mr-2" src="assets/ed.logo.jpg" alt="Logo">
+            e Division
+        </div>
+        <nav class="flex-1 overflow-y-auto rounded-lg">
+            <ul class="space-y-2 px-5">
+                <h3 class="text-sm font-semibold mb-2 text-gray-300">Main Features</h3>
+                <li>
+                    <a href="/officer-main/officer-dashboard"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200"
+                        routerLink="/officer-main/officer-dashboard" routerLinkActive="active"
+                        [routerLinkActiveOptions]="{exact:true}">
+                        <i class="bi bi-house-door-fill mr-2 text-lg"></i>
+                        <span class="text-sm font-medium text-opacity-100">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/officer-main/person-manage"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200"
+                        routerLink="/officer-main/person-manage" routerLinkActive="active">
+                        <i class="bi bi-file-earmark-person mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Person Manage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/officer-main/family-manage"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200"
+                        routerLink="/officer-main/family-mana">
+                        <i class="bi bi-people-fill mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Family Manage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/officer-main/allowance-manage"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200"
+                        routerLink="/officer-main/allowance-manage" routerLinkActive="active">
+                        <i class="bi bi-file-earmark-break-fill mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Allowance Manage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200">
+                        <i class="bi bi-file-earmark-check-fill mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Forms Manage</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/officer-main/request-manage"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200"
+                        routerLink="/officer-main/request-manage" routerLinkActive="active">
+                        <i class="bi bi-input-cursor mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Requests</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/officer-main/work-time-manage"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200"
+                        routerLink="/officer-main/work-time-manage" routerLinkActive="active">
+                        <i class="bi bi-bar-chart-fill mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Work time schedule</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/reports"
+                        class="flex items-center px-6 py-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 hover:rounded-xl transition duration-200">
+                        <i class="bi bi-inbox-fill mr-2 text-lg"></i>
+                        <span class="text-sm font-medium">Reports</span>
+                    </a>
+                </li>
+                <!-- Middle: Today Appointment -->
+                <div class="px-4 py-4 border-t border-gray-700">
+                    <h3 class="text-sm font-semibold mb-2 text-gray-300">Today’s Appointments</h3>
+                    <div class="bg-gray-800 p-3 rounded-xl">
+                        <!-- You can replace this with dynamic appointment data -->
+                        <p class="text-sm text-gray-200">🕐 10:00 AM - Mr. Silva</p>
+                        <p class="text-sm text-gray-200">🕐 02:00 PM - Mrs. Perera</p>
+                    </div>
+                    <div class="mt-3">
+                        <input type="date" class="w-full text-sm text-black px-2 py-1 rounded-lg bg-gray-500" />
+                    </div>
+                </div>
+                <!-- Bottom: Profile + Logout -->
+                <div class="px-4 py-4 border-t border-gray-700">
+                    <div class="flex items-center mb-2">
+                        <img class="w-8 h-8 rounded-full mr-2" src="assets/ed.logo.jpg" alt="User" />
+                        <div>
+                            <p class="text-sm font-medium">Officer Name</p>
+                            <p class="text-xs text-gray-400">Division Officer</p>
+                        </div>
+                    </div>
+                    <button class="w-full mt-2 px-3 py-1 bg-gray-600 text-white rounded-xl hover:bg-gray-700 text-sm">
+                        <i class="bi bi-box-arrow-right mr-1"></i> Sign Out
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6">
+        <router-outlet></router-outlet>
+    </main>
+</div>
