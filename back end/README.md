@@ -1,4 +1,4 @@
-# e_Division-Backend
+d# GRame-Backend
 A comprehensive web-based Division Management System to streamline government services like citizen management, document requests, appointments, complaints, and reports. Built with Angular, Spring Boot, and MySQL.
 
 # 🏛️ Division Management System
@@ -44,8 +44,4 @@ A full-stack web application designed to help **Division Officers** efficiently 
 - Notifications & Reminders
 - Reports & Analytics
 
-## 🚀 Getting Started
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/division-management-system.git
